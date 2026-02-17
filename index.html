@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LedgerLogic | Personal Budget</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Ledger Logic</h1>
+        <p>Simple, Persistent Envelope Budgeting</p>
+    </header>
+
+    <main>
+        <section class="controls">
+            <div class="form-section">
+                <h2>New Envelope</h2>
+                <form id="create-envelope-form">
+                    <input type="text" id="new-name" placeholder="Name (e.g., Coffee)" required>
+                    <input type="number" id="new-budget" placeholder="Amount (KSh)" required>
+                    <button type="submit" class="btn-create">Create</button>
+                </form>
+            </div>
+
+            <div class="form-section">
+                <h2>Log Expense</h2>
+                <form id="log-spending-form">
+                    <select id="spending-envelope-id" required>
+                        <option value="">-- Select --</option>
+                    </select>
+                    <input type="number" id="spending-amount" placeholder="KSh" required>
+                    <button type="submit" class="btn-spend">Spend</button>
+                </form>
+            </div>
+
+            <div class="form-section">
+                <h2>Sweep Funds</h2>
+                <form id="sweep-form">
+                    <select id="sweep-destination-id" required>
+                        <option value="">-- Destination --</option>
+                    </select>
+                    <button type="submit" class="btn-sweep">Sweep All</button>
+                </form>
+            </div>
+        </section>
+
+        <hr>
+
+        <div id="envelopes-list" class="grid-container">
+            </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
