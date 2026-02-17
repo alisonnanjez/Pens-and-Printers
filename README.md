@@ -30,7 +30,11 @@
 2. Open your terminal and **install dependencies**: npm install
 3.Initialize the Database (this creates your budget.sqlite file and adds initial categories): node seed.js
 4.Start the server: node server.js
-5.View the app at http://localhost:3000.
+
+### How to View
+- **Live Demo:** [Click here to view the app on Render](https://ledger-logic.onrender.com)
+- **Local Development:** Follow the installation steps below and view at `http://localhost:3000`.
+
 
 ### API Endpoints
 ### Envelopes
